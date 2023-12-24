@@ -1,7 +1,6 @@
 
 
 import os
-import typer
 from fastapi import FastAPI, HTTPException
 from openai import OpenAI
 import csv
@@ -16,7 +15,7 @@ class ChatGPTMicroservice:
  
     def __init__(self, api_key, data_dir="/app/data"):
         self.openai_handler = OpenAI(api_key=api_key)
-        self.csv_file = os.path.join(data_dir, "qa_data.csv")  # Use absolute path within the container
+        self.csv_file = os.path.join(data_dir, "qa_data.csv")  
 
       
 
@@ -50,6 +49,4 @@ async def ask(question: str, model: str = "gpt-3.5-turbo", max_tokens: int = 150
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-if __name__ == "__main__":
-    typer.echo("To the the FastAPI server, run: uvicorn querygpt4:app --host 0.0.0.0 --port 8000 --reload")
     
