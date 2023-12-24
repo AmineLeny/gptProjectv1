@@ -19,7 +19,7 @@ I highly enjoyed this experience and I can finally say that I understand  the " 
 
 
 I tried to do as much as I can so now im gonna explain my project
-I must state that i spent 5$ for the gpt keychaine XD
+and I must state that i spent 5$ for the gpt keychaine XD
 
 
 
