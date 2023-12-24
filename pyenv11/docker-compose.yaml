@@ -2,7 +2,7 @@ version: '3'
 
 services:
   web:
-    image: gptmicroservice:v1
+    image: gpt:v1
     container_name: chatgptmicroservice
     ports:
       - "8000:8000"
