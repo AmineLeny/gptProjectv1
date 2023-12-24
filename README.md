@@ -1,31 +1,6 @@
 # gptProject
 
-Hi Mr allaki Driss,
-I want to firstly thank you for this opportunity that will allow me to prove to you that I'm highly interested in sotware engineering 
-
-I must say that I  have no experience in software engineering but despite this inconvenience I would like you to know that I worked non stop from Friday 16:00 to the end of the deadline to make this project, i guess this can sum up my high interest in this field.
-
-
-
-I highly enjoyed this experience and I can finally say that I understand  the " but it works on my machine" meme and other dev memes.
- 
-![2ea388b8c20680bf97d7e1a3ecb4ce8604488bf85490af417fb5aa908c3b5e48](https://github.com/AmineLeny/gptProjectv1/assets/72925780/36bdf998-0ca5-4f3c-89c9-55fb4a2c2c28)
-
-![850a61abc00b53f7c804cc85711cf7d1305da78e5a35aae0b230a660db160c92](https://github.com/AmineLeny/gptProjectv1/assets/72925780/3b774fc2-3ba8-417f-b26b-c95f7fd3252a)
-
-
-
-
-
-
-I tried to do as much as I can so now im gonna explain my project
-and I must state that i spent 5$ for the gpt keychaine XD
-
-
-
-
-
-I'm gonna start with the python script
+I'm gonna explain  the python script
 
 
 
