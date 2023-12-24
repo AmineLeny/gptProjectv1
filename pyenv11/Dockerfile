@@ -15,8 +15,6 @@ RUN pip install --no-cache-dir --upgrade pip \
 # Make port 8000 available to the world outside this container
 EXPOSE 8000
 
-# Define environment variable
-ENV OPENAI_API_KEY="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"
 
 # Create the data directory
 RUN mkdir -p /app/data

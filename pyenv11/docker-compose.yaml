@@ -9,7 +9,7 @@ services:
     volumes:
       - ./CsvData:/app/data
     environment:
-      - OPENAI_API_KEY=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
+      - .env
     command: ["uvicorn", "querygpt4:app", "--host", "0.0.0.0", "--port", "8000"]
 
  
