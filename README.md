@@ -1,72 +1,69 @@
-# gptProject
+# gptProjectv1
 
-I'm gonna explain  the python script
+I will guide you to run the  dockerized version of this project on your device 
+<img width="621" alt="image" src="https://github.com/AmineLeny/gptProjectv1/assets/72925780/9a6a10d7-90e9-47c8-924c-5900d2590132">
 
+I deployed the image of the dockerized version of this project in the docker hub repository that I created with my docker account
+<img width="1299" alt="image" src="https://github.com/AmineLeny/gptProjectv1/assets/72925780/0af76271-2d62-4856-b1ae-5cbe4a96f95c">
 
+I will guide you to run the image on your device 
 
+first you need to install docker desktop 
+then you need to run on the terminal this command:    docker pull amineleny3/gpt:v1
 
+right now you have the image downloaded on your device 
 
+to run the container you need to run this commande : docker run -d -p 8000:8000 --name containername  amineleny3/gpt:v1 
 
+now you need to go and look for containers in the side bar of your docker desktop app 
 
-<img width="532" alt="Screenshot 2023-12-24 at 16 54 53" src="https://github.com/AmineLeny/gptProjectv1/assets/72925780/09c3c912-625c-4cce-92a4-d67075975850">
+in this example i remplaced the "containername" in the command"docker run -d -p 8000:8000 --name containername  amineleny3/gpt:v1 "  by "chatgptmicroservice" 
+<img width="1434" alt="image" src="https://github.com/AmineLeny/gptProjectv1/assets/72925780/e9a7b841-eb71-48cd-a7a0-1a46f5670dd6">
 
+then click on 8000:8000 port so you can open the localhost page
 
+<img width="1315" alt="image" src="https://github.com/AmineLeny/gptProjectv1/assets/72925780/33f8f658-1428-466f-9ed7-9ddc37cbf10f">
 
-
-These lines import necessary libraries and modules : os,fastapi,openAI,csv,dotenv 
-
-the load_dotenv()  load the environment variable stored in the .env file that contains our secret gpt api key [ I did this for security purposes ] 
-
-
-<img width="173" alt="image" src="https://github.com/AmineLeny/gptProjectv1/assets/72925780/87abd49d-bf86-444e-aedd-d8fb3de31002">
-
-here I created an instance of the FastApi() class i named it app
-
-
-
-
-
-
-
- 
-
-
-<img width="154" alt="image" src="https://github.com/AmineLeny/gptProjectv1/assets/72925780/3031cf60-6a3d-4404-b35a-5e0c1bacc244">
-
-This line initializes an empty list messages. This list will be used to keep track of the conversation between the user and the assistant.
-
-
-<img width="293" alt="image" src="https://github.com/AmineLeny/gptProjectv1/assets/72925780/e06c3dca-a2e7-4e13-ac90-8b476ab95155">
-
-
-This line defines a class named ChatGPTMicroservice.
+now add /docs to your Url to access the swagger UI so we can do some test (post requests)
 
 
 
-<img width="625" alt="image" src="https://github.com/AmineLeny/gptProjectv1/assets/72925780/8c5f13d8-e63f-4865-918a-fd6c1972daec">
 
-This is the constructor method of the ChatGPTMicroservice class. It initializes an instance of the class with an OpenAI API key and a default data directory. It also sets the csv_file attribute to the path of the CSV file where the conversation data will be stored.
-
+<img width="1317" alt="image" src="https://github.com/AmineLeny/gptProjectv1/assets/72925780/cdf2bcb9-d769-4212-9d5b-ec73a9d82121">
 
 
-<img width="828" alt="image" src="https://github.com/AmineLeny/gptProjectv1/assets/72925780/6775786d-287b-4951-b596-1889176bd2b2">
+now click on the green post
 
-    
-This method is used to query the ChatGPT API with a user's question. It appends the user's message to the messages list, sends the message to the OpenAI API, and stores the generated response in the messages list as well. It then calls the save_to_csv method to save the conversation to a CSV file.
+<img width="1328" alt="image" src="https://github.com/AmineLeny/gptProjectv1/assets/72925780/33100d4f-bfb3-4dc7-b1d7-10a78ff7a135">
 
+click on TRY IT OUT 
 
-  <img width="840" alt="image" src="https://github.com/AmineLeny/gptProjectv1/assets/72925780/21d3bc14-0ce0-4dab-adad-e3242dcc3613">
-
-    
-
-This method is responsible for saving the conversation to a CSV file. It opens the CSV file in append mode, creates a DictWriter object, and writes a new row to the CSV file with the question and answer.
+<img width="1307" alt="image" src="https://github.com/AmineLeny/gptProjectv1/assets/72925780/cc72e8b3-c7b5-409e-8683-4e8d2fb7da99">
 
 
-<img width="951" alt="image" src="https://github.com/AmineLeny/gptProjectv1/assets/72925780/07b38003-c87c-40a2-a8df-0a202723c9d4">
+and then input the question that you want chatgpt to answer and click on execute
+
+
+<img width="1312" alt="image" src="https://github.com/AmineLeny/gptProjectv1/assets/72925780/fc1eaa1b-8725-4076-902f-606725fb9f76">
+
+
+as you can see here we got the wanted data from chatgpt successfly
+
+<img width="1272" alt="image" src="https://github.com/AmineLeny/gptProjectv1/assets/72925780/4dfdebf4-ac57-4491-9210-6cb481ec758e">
 
 
 
-This is a FastAPI route definition. It specifies an HTTP POST endpoint at the path "/ask". The endpoint takes parameters for the question, model, max_tokens, and temperature. It creates an instance of the ChatGPTMicroservice class, queries the ChatGPT API, and returns the generated response. If an exception occurs, it raises an HTTP 500 exception with the details of the error.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
